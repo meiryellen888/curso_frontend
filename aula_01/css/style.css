@@ -1,0 +1,157 @@
+/* Aula 01 - CSS da pagina de boas vindas 
+Metodologia: MOBILE-FIRST
+
+-Estilos base são otimizados para CELULARES (Viewport pequeno)
+-Telas maiores recebem ajustes via Media Queries
+-Garante boas experiencias em qualquer dispositivo
+
+Estrutura do CSS: 
+Estilos Globais (body, fontes) 
+Estilos do Header (cabeçalho)
+Estilo da Main (conteudo principal)
+Estilos dos elementos (img, p, buttons)
+Media queries para desktop (ao final)
+*/
+
+/* Estilos Globais (Base Mobile) */
+
+/* Pega toda a pagina, retira o css padrão do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* define a familia de fontes padrão para toda a pagina */
+
+    background-color: #fff;
+    /* define a cor da pagina*/
+
+    color: #333;
+    /* cor padrão dos textos*/
+
+    margin: 0;
+    /* espaçamento externo do elemento */
+    padding: 0;
+    /* espaçamento iterno do elemento */
+
+    text-align: center;
+    /* alinha todo o texto para o centro*/
+}
+
+header {
+    background-color: #383836;
+    /* cor de fundo */
+    color: #fff;
+    padding: 30px 15px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    /* tamanho de fonte (1.8rem = 28.8 px) */
+    font-weight: 700;
+    /* peso da fonte */
+}
+
+/* estilo da Main - (conteúdo principal */
+main {
+    padding: 30px 15px;
+    /* Espaçamento interno do elemento */
+}
+
+/* estilos dos Elementos */
+
+/* estilo de img */
+img {
+    width: 100%;
+    /* para a imagem ocupar 100% do espaço de largura */
+    max-width: 300px;
+    /* o tamanho maximo da nossa imagem */
+    border-radius: 10px;
+    /* bordas arredondadas */
+    border: 1px solid black;
+    /* para colocar borda */
+    margin-bottom: 20px;
+    /* espaçamento externo embaixo da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* sombra sutil de profundidade */
+
+}
+
+/* estilo do Parágrafos */
+
+p {
+    font-size: 1rem;
+    /* tamanho de fonte */
+    margin-bottom: 30px;
+    /* espaçamento abaixo do parágrafo */
+    line-height: 1.5;
+    /* espaçamento entre linhas para ocupar toda a largura */
+}
+
+/* estilo do Botão */
+
+.button {
+    display: block;
+    /* display block faz o link ocupar toda a largura disponível */
+    background-color: #bbaeae;
+    color: #fff;
+    /* cor de texto */
+
+    padding: 15px;
+    /* espaçamento interno */
+    text-decoration: none;
+    /* para tirar a decoração dos links */
+    border-radius: 10px;
+    /* bordas arredondadas */
+    font-weight: bold;
+    /* peso da fonte */
+    transition: background-color 0.3s ease;
+    /* transição suave da cor de fundo */
+
+}
+
+footer {
+    background-color: #383836;
+    /* cor de fundo */
+    color: #fff;
+    /* cor do texto */
+    padding: 15px 0;
+    /* espaçamento interno */
+    width: 100%;
+    /* largura de 100% */
+
+}
+
+/* Media Query: tela maiores (Desktop) */
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        /* tamanho da fonte */
+    }
+
+    p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        /* maximo de largura */
+        margin: 0 auto 30px;
+        /* ajustando o espaçamento esterno */
+    }
+
+    .button {
+        display: inline-block;
+        /* notão voltar a ser pequeno para desktop */
+        padding: 15x 40 px;
+        /* posicionamento do elemento fixado */
+
+    }
+
+    footer {
+        position: fixed; /* posicionamento do elemento fixado*/
+        bottom: 0; /* espaçamento embaixo do elemento */ 
+    }
+
+
+}
