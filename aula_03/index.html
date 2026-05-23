@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- Aula 03 - Receita e Flexbox -->
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 03 - Receita e FlexBox</title>
+    <link rel="stylesheet" href="css/style.css"
+
+</head>
+<body>
+    
+    <!-- Container principal -->
+     <!-- Div wrapper que centraliza todo o conteudo da receita -->
+    <div class="recipe-container">
+
+        <!-- titulo principal -->
+        <h1> Bolo de Cenoura com Chocolate </h1>
+
+        <!-- seção de ingredientes -->
+         <!-- Tag semantica <section> agrupa conteudos tematico relacionado -->
+        <section class="ingredientes">
+
+            <!-- subtitulo da seção -->
+            <h2> Ingredientes</h2> 
+
+            <!-- lista flexivel de ingredientes -->
+             <!-- utiliza css flexbox para mudar de layout conforme o tamanho da tela:
+              - mobile: os itens em coluna
+              - desktop: os itens em linha -->
+
+              <!-- ul - vria listas não ordenadas -->
+            <ul class="flex-list">
+
+                <!-- li - cria o item da lista -->
+                <li> 3 Cenouras médias </li>
+                <li> 3 Ovos </li>
+                <li> 1 Xícara de óleo </li>
+                <li> 2 Xícaras de açúcar </li>
+                <li> 2 Xícaras de farinha </li>
+                <li> 1 Colher de fermento </li>
+
+
+            </ul>
+        </section> 
+
+        <!-- seção de informações nutricionais -->
+         <!-- seção semantica para dados tabulares -->
+        <section class="info">
+            <h2> Informações Nutricionais</h2>
+
+            <!-- tabela responsiva -->
+             <!-- tabela que exibe os nutrientes e quantidade  
+              no css, aplica scroll horizontal em mobile se necessario-->
+              <!-- tabela: usada para orgazinar dados em linhas e colunas -->
+
+              <table>
+                <!-- thead: representa o cabeçalho da tabela -->
+                <thead>
+                    <!--  tr: table row: cria uma linha -->
+                    <tr>
+                        <!--  th table header: celular de titulo (fica em negrito por padrão)
+                          Definindo o nome da coluna -->
+                        <th> Nutriente </th>
+                        <th> Quantidade </th>
+
+                    </tr>
+                </thead>
+
+                <!-- tbody: representa o corpo da tabela (onde ficam os dados) -->
+                <tbody>
+                    <tr>
+                        <!-- td: linhas  -->
+                        <td> Calorias</td>
+                        <td> 320 kcal</td>
+                    </tr>
+
+                    <tr>
+                        <td> Açúcares </td>
+                        <td> 25g </td>
+                    </tr>
+
+                    <tr>
+                        <td> Gorduras </td>
+                        <td> 12g </td>
+                    </tr>
+
+                </tbody>
+              </table>
+        </section>
+    </div>
+</body>
+</html>

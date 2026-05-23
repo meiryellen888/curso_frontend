@@ -93,34 +93,23 @@ p {
 /* estilo do Botão */
 
 .button {
-    display: block;
-    /* display block faz o link ocupar toda a largura disponível */
+    display: block;  /* display block faz o link ocupar toda a largura disponível */
     background-color: #bbaeae;
-    color: #fff;
-    /* cor de texto */
+    color: #fff;  /* cor de texto */
 
-    padding: 15px;
-    /* espaçamento interno */
-    text-decoration: none;
-    /* para tirar a decoração dos links */
-    border-radius: 10px;
-    /* bordas arredondadas */
-    font-weight: bold;
-    /* peso da fonte */
-    transition: background-color 0.3s ease;
-    /* transição suave da cor de fundo */
+    padding: 15px;  /* espaçamento interno */
+    text-decoration: none;  /* para tirar a decoração dos links */
+    border-radius: 10px;  /* bordas arredondadas */
+    font-weight: bold; /* peso da fonte */
+    transition: background-color 0.3s ease;  /* transição suave da cor de fundo */
 
 }
 
 footer {
-    background-color: #383836;
-    /* cor de fundo */
-    color: #fff;
-    /* cor do texto */
-    padding: 15px 0;
-    /* espaçamento interno */
-    width: 100%;
-    /* largura de 100% */
+    background-color: #383836; /* cor de fundo */
+    color: #fff; /* cor do texto */
+    padding: 15px 0; /* espaçamento interno */
+    width: 100%; /* largura de 100% */
 
 }
 
@@ -128,24 +117,18 @@ footer {
 
 @media (min-width: 768px) {
     h1 {
-        font-size: 2.5rem;
-        /* tamanho da fonte */
+        font-size: 2.5rem;  /* tamanho da fonte */
     }
 
     p {
         font-size: 1.2rem;
-        max-width: 600px;
-        /* maximo de largura */
-        margin: 0 auto 30px;
-        /* ajustando o espaçamento esterno */
+        max-width: 600px; /* maximo de largura */
+        margin: 0 auto 30px; /* ajustando o espaçamento esterno */
     }
 
     .button {
-        display: inline-block;
-        /* notão voltar a ser pequeno para desktop */
-        padding: 15x 40 px;
-        /* posicionamento do elemento fixado */
-
+        display: inline-block; /* notão voltar a ser pequeno para desktop */
+        padding: 15x 40 px; /* posicionamento do elemento fixado */
     }
 
     footer {
