@@ -44,6 +44,10 @@ h1 {
     font-size: 1.5rem;
 }
 
+h2 {
+    margin: 25px;
+}
+
 /* listas flexiveis */
 
 .flex-list {
@@ -65,9 +69,54 @@ h1 {
 /*  seções */
 
 .info {
-    /*se a tela ficar muito larga em mobile ele permite o scroll horizontal*/
+    /* se a tela ficar muito larga em mobile ele permite o scroll horizontal */
     overflow-x: auto;
 }
+
+table {
+    width: 100%; /* ocupa a largura 100% disponível */
+    min-width: 300 px; /* largura minima*/
+
+    border-collapse: collapse; /* remover o espaço entre as bordas das delulas */
+    margin-top: 20px; /* espaçamento acima da tabela */
+}
+
+th, td {
+    padding: 10px; /* espaçamento interno */
+    font-size: 0.9rem; /* tamanho da fonte em mobile */
+    border-bottom: 1px solid #eee; /* linha divisoria entre as celulas */
+}
+
+/* Media Query: Tablet / Descktop */
+
+@media (min-width: 768px) {
+    .recipe-container {
+        max-width: 800px; /* maximo de largura */
+        margin: 0 auto; /* centralizou horizontalmente */
+        padding: 40px; /* mais espaço interno */
+    }
+    
+    h1 {
+        font-size: 2.2rem; /* tamanho do titulo */
+    }
+
+    .flex-list {
+        flex-direction: row; /* esta deixando a direção em linhas */
+        justify-content: center; /* centraliza horizontalmente os ingredientes */
+
+    }
+
+    .flex-list li {
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+
+    th,td {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
 
 
 
