@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 05 - layout de notícias </title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!-- Cabeçalho da pagina -->
+    <header class="main-header"> 
+        <!-- logo do site -->
+        <div class="logo"> TecNews </div>
+
+        <!-- Menu de Navegação -->
+        <!-- Tag (nav) é semantica e indica area de navegação -->
+          <nav>
+
+            <ul>
+                <li> <a href="#"> Home </a></li>
+                <li> <a href="#"> Gadgets </a></li>
+                <li> <a href="#"> Software </a></li>
+            </ul>
+
+          </nav>
+        </header> 
+
+        <!-- Wrapper do layout (flex: colum no mobile e Row no descktop) -->
+        <div class="layout-wrapper">
+
+            <!-- Conteudo Principal  -->
+             <!-- Seção semantica para conteudo  principal -->
+            <main>
+                <!-- Artigo (article> -->
+                 <!-- Tag semantica indica um artigo/post independente -->
+                <article class="post">
+                    <h1> O Futuro da Inteligência Atificial em 2026</h1>
+
+                    <img src="./css/img/image.png">
+
+                    <p> A inteligência artificial atingiu um novo patamar de integração no cotidiano...</p>
+                    <p> Novos modelos multimodais permitem interações naturais e eficientes.</p>
+
+                </article>
+            </main>
+
+            <!-- Barra lateral (Aside/Sidebar) -->
+             <!--  Seção semantica para conteudo secundarios (barras laterais) -->
+            <aside class="sidebar">
+            <h3> Mais lidas </h3>
+
+            <ul>
+                <li><a href="#"> Lançamento do novo Iphone </a></li>
+                <li><a href="#"> Dicas de CSS Grid </a></li>
+                <li><a href="#"> O que é Web3? </a></li>
+
+            </ul>
+            </aside>
+        </div>
+
+        <footer class="main-footer"> 
+            <p> &copy; 2026 TecNews - Todos os direitos reservados </p>
+
+        </footer>
+
+</body>
+</html>
